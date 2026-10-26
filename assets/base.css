@@ -53,3 +53,5 @@ label{display:grid;gap:6px;font-weight:600}input,textarea{font:inherit;padding:1
 .theme-stars h1{font-weight:400}.theme-stars .marquee{color:var(--ac);border-color:var(--ac)}
 .theme-bubbles .card{box-shadow:0 10px 0 -2px var(--ac2)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal,.split .w{opacity:1;transform:none}.pipe{stroke-dashoffset:0}}
+.nav .btn{white-space:nowrap;flex-shrink:0}.nav .sh{display:none}.logo{min-width:0}
+@media(max-width:519px){.nav .lg{display:none}.nav .sh{display:inline}.nav .btn.sm{padding:.5em .9em;font-size:.85rem}.logo{font-size:1.05rem;line-height:1.15}}
