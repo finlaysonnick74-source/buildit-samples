@@ -1,0 +1,3 @@
+(()=>{const h=document.querySelector('.split');if(h){const w=h.textContent.split(' ');h.setAttribute('aria-label',h.textContent);h.innerHTML=w.map((x,i)=>`<span class="w" aria-hidden="true" style="--i:${i}">${x}</span>`).join(' ')}
+const els=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(e=>e.classList.add('in'));return}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});els.forEach(e=>io.observe(e))})();
